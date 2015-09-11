@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>CS365 : Artificial Intelligence</title>
+		<style type="text/css">
+			<!--
+				body {
+					background-color : #EEEEFF;
+				}
+			-->
+		</style>
+	</head>
+	<body>
+		<center>
+			<div style="width:1000px;background:white;">
+				<h1>CS 365 : Artificial Intelligence</h1>
+				<h3>Guide : Prof. Amitabh Mukherjee</h3>
+				<hr width=90%>
+				<p> Group R4 : Mohd. Dawood & Ashu Gupta </p>
+				<hr width=90%>
+				<div style="width:90%;">
+					<h2 align="left">Vision Based Object Detection and Grasping known objects using Humanoid Robot Aldebaran Nao</h2>
+					
+					<hr width=100%>
+					<p align="left">
+						<h3 align="left"><u>Introduction :</u></h3>
+						<p align="left">Considering	the fact that soon enough our dependency on robots is going to increase drastically, we expect every intelligent autonomous
+						robot to be well-skilled in Hand-Eye coordination to interact with environment efficiently .
+						Our aim is efficient and simple vision based object detection and arm motion planning to facilitate grasping of known object models.
+						Robot arm motion planning for high number of degrees of freedom involves solving all joint values ,i.e.,Inverse Kinematics(IK)
+						and planning moton in its high dimenional configuration space. </p>
+						<p align="left">In this project we are going to implement our approach  on humanoid robot Aldebaran Nao.Nao will detect a known object ad place 
+						it in the specified position.</p> 
+						<br/>
+						<h3 align="left"><u >Our approach : </u></h3>
+						<p align ="left">Our approach is going to be limited because of the limited hardware of nao for eg- slow processor,poor grasping because
+						of three fingers controlled by one degree of freedom, less stiff joints,etc.</p>
+						<p align ="left">Our objection detection approach in based on color characteristics. A region of known color is searcherd in the image if the region is detected it is subjected to analysis bases on known dimensions and shape . if the characteristics meet part of image is labeled as the object.
+
+						Once the object is detected and segmented and depth and distance of the object can be estimated using prior knowledge of the object geometry.The ball becomes larger in the image as it comes closer and smaller as it is far away.Intitially calibrating camera and using known dimensions of the ball the distance of the object can be determined by trignometry.
+
+						Once the object has been detected and its distance estimated the grasping positions are determined with the help of prior knowledge of image model and solving Inverse Kinematics for its joints.
+						The arm motion planning is carried out by training the robot on its training set and then motion planning on the constructed lower dimensionsal manifold  .    
+												<br/>
+						<br/>
+						<h3 align="left"><u>Motivation : </u></h3>
+						<p align = "left">Humanoid Robots if imparted enough intelligence can be really useful.They can be made to do various tasks which are either too common for 
+						the human beings or too difficult for the physically challenged.This brings us to one of the most important utility of this project.It
+						coud be an important step towards helping physically challenged for eg - robot could be used to respond to the speech or actions of blind 
+						people, to assist them. 
+						</p>
+					</p>
+					<p align="left">
+						<h3 align="left"><u> Papers Referenced :</u></h3>
+						<ul style="text-align:left">
+							<li>Tomas Gonzales Sanchez , Supervisor:Dr. Dominic Puig <a href="http://upcommons.upc.edu/pfc/bitstream/2099.1/7722/1/MT_TomasGonzalezSanchez-URV.pdf">Artificial vision in Nao Humanoid Robot ,September 2009</a>  </li>
+							<li>Nikolaus Vahrankamp ,Dmitry Berenson ,Tamim Asfour, James Kuffner, Rudiger Dillmann  <a href="http://automation.berkeley.edu/~berenson/vahrenkampIROS2009.pdf">Humanoid motion planning for dual arm manipulation and regrasping tasks </a>  IEEE/RSJ International Conference on Intelligent Robot and Systems , October 2009</li>
+						</ul>
+					</p>
+					<hr width=90%>
+					<br/>
+				</div>
+			</div>
+		</center>
+	</body>
+</html>
